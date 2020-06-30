@@ -1,0 +1,329 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C6470718-67E1-4095-B27B-2D254A6A36C3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>N2___Animais</RootNamespace>
+    <AssemblyName>N2 - Animais</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ANIMAIS\Baleia.cs" />
+    <Compile Include="ANIMAIS\Cachorro.cs" />
+    <Compile Include="ANIMAIS\Coruja.cs" />
+    <Compile Include="ANIMAIS\Elefante.cs" />
+    <Compile Include="ANIMAIS\Galinha.cs" />
+    <Compile Include="ANIMAIS\Gaviao.cs" />
+    <Compile Include="ANIMAIS\Leao.cs" />
+    <Compile Include="ANIMAIS\Morcego.cs" />
+    <Compile Include="ANIMAIS\Ornitorrinco.cs" />
+    <Compile Include="ANIMAIS\Pato.cs" />
+    <Compile Include="ANIMAIS\Pinguim.cs" />
+    <Compile Include="ANIMAIS\Pombo.cs" />
+    <Compile Include="ANIMAIS\Tartaruga.cs" />
+    <Compile Include="CLASSES ANIMAIS\Animal.cs" />
+    <Compile Include="CLASSES ANIMAIS\Ave.cs" />
+    <Compile Include="ESTRUTURA DADOS\ArvoreBinaria.cs" />
+    <Compile Include="ESTRUTURA DADOS\ComparadorNome.cs" />
+    <Compile Include="ESTRUTURA DADOS\Lista.cs" />
+    <Compile Include="ESTRUTURA DADOS\Nodo.cs" />
+    <Compile Include="ESTRUTURA DADOS\NodoLista.cs" />
+    <Compile Include="ESTRUTURA DADOS\Ordenacao.cs" />
+    <Compile Include="FrmJogo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmJogo.Designer.cs">
+      <DependentUpon>FrmJogo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ANIMAIS\Gato.cs" />
+    <Compile Include="FrmCadastro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCadastro.Designer.cs">
+      <DependentUpon>FrmCadastro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmInicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmInicio.Designer.cs">
+      <DependentUpon>FrmInicio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="INTERFACES\IAquatico.cs" />
+    <Compile Include="INTERFACES\IOviparo.cs" />
+    <Compile Include="INTERFACES\IPredador.cs" />
+    <Compile Include="INTERFACES\IVoar.cs" />
+    <Compile Include="CLASSES ANIMAIS\Mamifero.cs" />
+    <Compile Include="FrmListagem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmListagem.Designer.cs">
+      <DependentUpon>FrmListagem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="CLASSES ANIMAIS\Reptil.cs" />
+    <EmbeddedResource Include="FrmJogo.resx">
+      <DependentUpon>FrmJogo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCadastro.resx">
+      <DependentUpon>FrmCadastro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmInicio.resx">
+      <DependentUpon>FrmInicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmListagem.aa-DJ.resx">
+      <DependentUpon>FrmListagem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmListagem.resx">
+      <DependentUpon>FrmListagem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baleiaapagada.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baleialaranja.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baleiaverde.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cachorroapagado.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cachorrolaranja.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cachorroverde.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\corujaapagada.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\corujalaranja.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\corujaverde.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\elefanteapagado.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\elefantelaranja.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\elefanteverde.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\galinhaapagada.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\galinhalaranja.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\galinhaverde.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gatoapagado.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gatolaranja.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gatoverde.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gaviaoapagado.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gaviaolarajna.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gaviaoverde.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\leaoapagado.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\leaolaranja.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\leaoverde.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mocegoverde.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\morcegoapagado.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\morcegolaranja.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ornitorrincoapagado.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ornitorrincolaranja.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ornitorrincoverde.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\patoapagado.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\patolaranja.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\patoverde.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pinguimapagado.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pinguimlaranja.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pinguimverde.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pomboapagado.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pombolaranja.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pomboverde.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tartarugaapagada.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tartarugalarajna.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tartarugaverde.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gelo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ceu.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gramado.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\noite.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\praia.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Morcego.png" />
+    <None Include="Resources\Leao.png" />
+    <None Include="Resources\tartarugaovo.png" />
+    <None Include="Resources\pomboovo.png" />
+    <None Include="Resources\pinguim ovo.png" />
+    <None Include="Resources\patoovo.png" />
+    <None Include="Resources\ornitorrincoovo.png" />
+    <None Include="Resources\pombochocando.png" />
+    <None Include="Resources\pinguimchocando.png" />
+    <None Include="Resources\patochocando.png" />
+    <None Include="Resources\ornitorrincochocando.png" />
+    <None Include="Resources\Tartarugacomendo.png" />
+    <None Include="Resources\Pombocomendo.png" />
+    <None Include="Resources\Pinguimcomendo.png" />
+    <None Include="Resources\Patocomendo.png" />
+    <None Include="Resources\Ornitorrincocomendo.png" />
+    <None Include="Resources\Morcegocomendo.png" />
+    <None Include="Resources\Leaocomendo.png" />
+    <None Include="Resources\peixe.png" />
+    <None Include="Resources\Milho.png" />
+    <None Include="Resources\mato.png" />
+    <None Include="Resources\sair.png" />
+    <None Include="Resources\cadastro2.jpg" />
+    <None Include="Resources\inicio.png" />
+    <None Include="Resources\Corujacomendo.png" />
+    <None Include="Resources\Baleiacomendo.png" />
+    <None Include="Resources\Cachorrocomendo.png" />
+    <None Include="Resources\Elefantecomendo.png" />
+    <None Include="Resources\Galinhacomendo.png" />
+    <None Include="Resources\Gatocomendo.png" />
+    <None Include="Resources\Gaviaocomendo.png" />
+    <None Include="Resources\corujachocando.png" />
+    <None Include="Resources\gaviaochocando.png" />
+    <None Include="Resources\corujaovo.png" />
+    <None Include="Resources\gaviaoovo.png" />
+    <None Include="Resources\Fundo form azul.jpg" />
+    <None Include="Resources\Baleia.png" />
+    <None Include="Resources\Cachorro.png" />
+    <None Include="Resources\Elefante.png" />
+    <None Include="Resources\Gato.png" />
+    <None Include="Resources\GalinhaBotando.png" />
+    <None Include="Resources\GalinhaChocando.png" />
+    <Content Include="Resources\lago.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
